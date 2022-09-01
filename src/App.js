@@ -10,9 +10,13 @@ const TedDB = {
     {
       title: "Learning to Code is Not Just for Coders -Ali Partovi",
       rating: "3/5"
+    },
+    {
+      title: "How I taught myself to code -Litha Soyizwapi ",
+      rating: "4/5"
     }
   ],
-  business: [
+  entrepreneurship: [
     {
       title: "The Power of an Entrepreneurial Mindset -Bill Roche",
       rating: "5/5"
@@ -20,6 +24,11 @@ const TedDB = {
     {
       title: "Entrepreneurship As A State Of Mind -Mr. Ankur Warikoo",
       rating: "5/5"
+    },
+    {
+      title:
+        "Zero Equals One: Creating A Business From Nothing -Riley Csernica",
+      rating: "4/5"
     }
   ],
   design: [
@@ -28,7 +37,11 @@ const TedDB = {
       rating: "5/5"
     },
     {
-      title: "Design for All 5 Senses | Jinsop Lee",
+      title: "Design for All 5 Senses -Jinsop Lee",
+      rating: "3/5"
+    },
+    {
+      title: "The power of design -JD Hooge",
       rating: "3/5"
     }
   ]
@@ -84,11 +97,17 @@ export default function App() {
               <div style={{ fontSize: "larger", marginBottom: "0.5rem" }}>
                 {talk.title}
               </div>
-              <div style={{ fontSize: "medium" }}>{talk.rating}</div>
+              <div style={{ fontSize: "medium", color: "#FFB02E" }}>
+                {talk.rating}
+              </div>
             </li>
           ))}
         </ul>
       </div>
+      <footer className="footer">
+        Developed by{" "}
+        <a href="https://vishalsinghrawat.netlify.app/">Vishal Singh Rawat</a>{" "}
+      </footer>
     </div>
   );
 }
