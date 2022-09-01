@@ -16,7 +16,7 @@ const TedDB = {
       rating: "4/5"
     }
   ],
-  entrepreneurship: [
+  business: [
     {
       title: "The Power of an Entrepreneurial Mindset -Bill Roche",
       rating: "5/5"
