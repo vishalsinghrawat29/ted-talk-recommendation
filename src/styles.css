@@ -1,25 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --primary-color: #fa58b6;
+  --background-color: #1a1a40;
+  --text-color: #d8d6d6;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 .App {
-  font-family: sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   max-width: 600px;
   margin: auto;
   padding: 2rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #030a21;
+  background-color: var(--background-color);
+}
+.title {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+.watch-btn {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0rem;
+  margin: 0rem;
+  border-radius: 0.2rem;
+  color: var(--primary-color);
+}
+.ratingText {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0rem 0rem 0.3rem 0rem;
+}
+.head-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.head-sub-text {
+  font-size: 1rem;
 }
 
-.footer {
+.footer-section {
   padding: 1rem;
   text-align: center;
   margin-top: 3rem;
-  color: rgb(216, 223, 231);
 }
 
-.footer a {
+.footer-section h4 {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.footer-section a {
   text-decoration: none;
-  font-weight: bold;
-  color: #ffb02e;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 0rem;
+}
+.list-non-bullet {
+  list-style: none;
+  padding: 0;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+.link {
+  color: var(--text-color) !important;
+  font-weight: 400 !important;
 }
